@@ -4,7 +4,11 @@ const app = express();
 
 const { v4: uuidv4 } = require("uuid");
 
+const cors = require("cors");
+
 app.use(express.json()); //Middleware
+
+app.use(cors());
 
 const mongoose = require("mongoose");
 
